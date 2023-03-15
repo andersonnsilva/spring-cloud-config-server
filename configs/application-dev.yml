@@ -1,0 +1,3 @@
+greeting-service:
+  greeting: "Ola"
+  default-value: "Mundo Dev"
