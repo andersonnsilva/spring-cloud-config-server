@@ -1,0 +1,21 @@
+server:
+  port: 9090
+
+spring:
+  application:
+    name: greeting-config-service
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/andersonnsilva/spring-cloud-config-server
+          default-label: main
+          search-paths:
+            - 'configs*'
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+          - '*'
